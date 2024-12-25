@@ -1,0 +1,4 @@
+MRN,Visit_ID,Sample_ID,Start_Point,Filepath_R1,Filepath_R2,Filepath_VCF
+123,123456,S1,FASTQ,/home/bsl014/Desktop/cli_playground/7682736582_R1_00.fastq.gz,/home/bsl014/Desktop/cli_playground/7682736582_R2_001.fastq.gz,
+200,234567,S2,VCF,,,/home/bsl014/Desktop/cli_playground/temp/dummy.vcf
+300,345678,S3,FASTQ,/home/bsl014/Desktop/cli_playground/7682736582_R1_00.fastq.gz,/home/bsl014/Desktop/cli_playground/7682736582_R2_001.fastq.gz,

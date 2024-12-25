@@ -1,0 +1,12 @@
+0,1
+Invalid MRN,
+"[0, 1, 2]","[None, 'AB', '12']"
+['invalid fastq'],
+"[2, 4]","['/path/f1/', '/pth/f3']"
+
+l1 = [["Invalid MRN"]]
+l2 = [[0,1,2],[None,"AB",'12']]
+l3 = [[2,4],['/path/f1/', '/pth/f3']]
+l4 = [['invalid fastq']]
+fl = [l1,l2,l4,l3]
+df = pd.DataFrame(fl)

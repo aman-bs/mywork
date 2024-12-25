@@ -1,0 +1,20 @@
+Index,Invalid Value
+### Invalid Mrn Data For Column Mrn:,
+0,
+1,
+2,
+3,
+4,
+5,
+### Invalid Values Found For Column Start Point:,
+3,GFHF
+### Invalid Fastq File For Column Filepath R1:,
+0,/home/bsl014/Desktop/cli_playground/7682736582_R1.fastq.gz
+2,/home/bsl014/Desktop/cli_playground/7682736582_R1.fastq.gz
+4,/home/bsl014/Desktop/cli_playground/7682736582_R1.fastq.gz
+### Invalid Fastq File For Column Filepath R2:,
+0,/home/bsl014/Desktop/cli_playground/7682736582_R2.fastq.gz
+2,/home/bsl014/Desktop/cli_playground/7682736582_R2.fastq.gz
+4,/home/bsl014/Desktop/cli_playground/7682736582_R2.fastq.gz
+### Invalid Vcf File For Column Filepath Vcf:,
+1,

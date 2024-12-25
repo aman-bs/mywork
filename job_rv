@@ -1,0 +1,29 @@
+from toil.common import Toil
+from toil.job import Job
+
+def first_job(job):
+    # This job performs some computation and returns a result
+    result = "Hello, World!"
+    return result
+
+def second_job(job):
+    # This job retrieves the return value from the first job
+    previous_result = job.rv()  # Get the return value from the previous job
+    print(f"Received from first job: {previous_result}")
+
+def main():
+    # Create the top-level job
+    root_job = Job.wrapJobFn(first_job)  # Wrap the first job
+    # Chain the second job to run after the first
+    root_job.addChild(Job.wrapJobFn(second_job))
+    
+    options = Job.Runner.getDefaultOptions()
+    options.clean = "always"  
+    options.logLevel = "OFF"
+
+    with Toil(options) as toil:
+        toil.start(root_job)  # Use start instead of restartFromRoot
+
+if __name__ == "__main__":
+    main()
+/augmet-mp/scratch/augmetcli_downloads
